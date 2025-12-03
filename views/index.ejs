@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Aplicación</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Mi Aplicación</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="inner">
+        <div class="hero-text">
+          <h2>¡Bienvenido!</h2>
+          <p>Descubre todas las funcionalidades que tenemos preparadas para ti. Únete a nuestra comunidad y empieza a disfrutar de una experiencia única. </p>
+          <p>Accede a tu cuenta o registrate en segundos para comenzar tu aventura con nosotros. </p>
+        </div>
+
+        <div class="options">
+          <div class="option" id="already-registered">
+            <h3>Ya estoy registrado</h3>
+            <form id="form-registered">
+              <label for="email"></label>
+              <input type="email" id="email" placeholder="Introduce tu correo" required />
+              <label for="password"></label>
+              <input type="password" id="password" placeholder="Introduce tu contraseña" required />
+              <button type="submit">Enviar</button>
+              <button type="button" id="cancel">Cancelar</button>
+            </form>
+          </div>
+
+          <div class="option" id="not-registered">
+            <h3>No estoy registrado aún</h3>
+            <form id="form-register">
+              <label for="new-email"></label>
+              <input type="email" id="new-email" placeholder="Introduce tu correo" required />
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>By Jhonaider Viera, 2025</p>
+    </footer>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
