@@ -26,7 +26,6 @@ nav ul li a {
   font-size: 1.2rem;
 }
 
-/* Header hover effect */
 nav ul li a:hover {
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   padding: 5px;

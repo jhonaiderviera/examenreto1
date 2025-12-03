@@ -83,19 +83,17 @@ form button:hover {
   background-color: #667eea;
 }
 
-/* Mostrar el formulario correspondiente al hacer clic */
 .form-hidden {
-  display: none; /* Los formularios estarán ocultos por defecto */
+  display: none; 
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
 .show-form {
-  display: block; /* Muestra el formulario */
+  display: block; 
   opacity: 1;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
   .options {
     flex-direction: column;

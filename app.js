@@ -6,7 +6,6 @@ const createError = require('http-errors');
 
 const app = express();
 
-// view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
@@ -14,13 +13,11 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public'))); // Asegúrate de que esté configurado para servir archivos estáticos
+app.use(express.static(path.join(__dirname, 'public'))); 
 
-// Configuración de rutas
 const indexRouter = require('./routes/index');
 app.use('/', indexRouter);
 
-// Error handling
 app.use(function(req, res, next) {
   next(createError(404));
 });

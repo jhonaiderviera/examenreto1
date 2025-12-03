@@ -1,4 +1,3 @@
-// Código de cliente para manipulación del DOM
 document.addEventListener('DOMContentLoaded', () => {
   const alreadyRegistered = document.getElementById("already-registered");
   const notRegistered = document.getElementById("not-registered");
