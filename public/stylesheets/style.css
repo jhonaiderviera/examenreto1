@@ -1,8 +1,117 @@
+@import 'header.css';
+@import 'footer.css';
+@import 'form.css';
+@import 'hero.css';
+
+/* Estilos generales */
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f7fa;
 }
 
-a {
-  color: #00B7FF;
+h2 {
+  color: #667eea;
+  text-align: center;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+}
+
+/* Estilos para las opciones */
+.options {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.option {
+  background: #ffffff;
+  padding: 20px;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0.9;
+  transition: all 0.3s ease;
+}
+
+.option:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+  opacity: 1;
+}
+
+/* Formularios */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+}
+
+form button {
+  background-color: #764ba2;
+  color: white;
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #667eea;
+}
+
+/* Mostrar el formulario correspondiente al hacer clic */
+.form-hidden {
+  display: none; /* Los formularios estarán ocultos por defecto */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.show-form {
+  display: block; /* Muestra el formulario */
+  opacity: 1;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .options {
+    flex-direction: column;
+  }
+
+  .option {
+    margin-bottom: 20px;
+  }
+
+  .hero {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .inner {
+    padding: 20px;
+  }
 }

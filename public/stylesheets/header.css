@@ -1,39 +1,34 @@
 header {
-    background-color: #667eea; 
-    color: white; 
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    align-items: center;
-  }
-  
-  header .logo h1 {
-    margin: 0;
-    color: white;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-  }
-  
-  nav ul li {
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
-    padding: 10px;
-    transition: background 0.3s ease, transform 0.3s ease; 
-    border-radius: 5px;
-  }
-  
-  nav ul li a:hover {
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); 
-    color: #333; 
-    transform: translateY(50px); 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
-  }
-  
+  background-color: #667eea;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+
+header .logo h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* Header hover effect */
+nav ul li a:hover {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 5px;
+  border-radius: 5px;
+}
